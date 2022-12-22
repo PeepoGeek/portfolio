@@ -1,0 +1,303 @@
+.hero {
+
+    grid-row: 2/3;
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(60rem, 1fr));
+
+
+
+
+
+
+    &__img-container {
+
+        position: relative;
+        margin-top: 5rem;
+        width: 44.6rem;
+        justify-self: end;
+        margin-right: 3rem;
+
+        @media only screen and (max-width:1199px) {
+            height: min-content;
+            margin-top: -30rem;
+
+            margin-right: auto;
+            margin-left: auto;
+            width: 42.6rem;
+            transform: translateX(30rem);
+        }
+
+
+
+        @media only screen and (max-width: 1112px) {
+
+            margin-top: 0;
+            margin-right: auto;
+            margin-left: auto;
+            width: 42.6rem;
+            transform: none;
+            transform: translateX(10rem);
+        }
+
+
+        @media only screen and (max-width:866px) {
+            margin-left: auto;
+            margin-right: 0;
+            transform: translateX(0);
+            width: max-content;
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+        &-img {
+
+
+            &>img {
+
+                @media only screen and (max-width:866px) {
+
+                    object-fit: fill;
+                    height: 40rem;
+                    width: 100%;
+
+
+                }
+
+
+
+            }
+
+
+        }
+
+
+    }
+
+
+
+
+
+
+
+
+
+    &__text-container {
+
+
+        max-width: 56.7rem;
+        grid-column: 1/span 1;
+
+        color: #FFFFFF;
+        font-family: $font-primary-md;
+
+        padding-left: 15%;
+        padding-top: 5rem;
+        padding-bottom: 11.3rem;
+
+        @media only screen and (max-width:1176px) {
+
+            max-width: 65rem;
+
+        }
+
+        @media only screen and (max-width:1112px) {
+
+
+            text-align: justify;
+            margin-left: 16%;
+            margin-top: 8%;
+            padding: 0;
+        }
+
+        @media only screen and (max-width:866px) {
+            margin-left: 10rem;
+            margin-right: 10rem;
+        }
+
+
+
+
+
+
+
+
+
+        &__title {
+            margin-bottom: 1.8rem;
+
+            line-height: 125%;
+
+
+
+        }
+
+        &__text {
+            line-height: 3.2rem;
+            font-weight: 400;
+            font-size: 1.6rem;
+            margin-bottom: 3rem;
+
+            @media only screen and (max-width:1112px) {
+                margin-bottom: 5rem;
+            }
+
+
+        }
+
+
+
+
+
+    }
+
+    &__card {
+
+        &-box {
+            position: absolute;
+            transform: translateX(-22rem);
+        }
+
+
+        text-align: center;
+        width: 21.3rem;
+        height: 9.8rem;
+        border-radius: 2.4rem;
+        background-color: #FFFFFF !important;
+
+        @media only screen and (max-width: 700px) {
+
+            width: 18.3rem;
+            height: 7.8rem;
+
+        }
+
+
+
+
+        &__style {
+            text-align: center;
+            width: 21.3rem;
+            height: 9.8rem;
+            border-radius: 2.4rem;
+            background-color: #FFFFFF !important;
+
+        }
+
+
+        &-heading {
+            font-family: 'Poppins';
+            font-style: normal;
+        }
+
+
+
+
+        &__header {
+
+
+            display: flex;
+            justify-content: center;
+            gap: .1rem;
+
+            &>img {
+                transform: translateY(-.9rem);
+            }
+        }
+
+
+        &--1 {
+            margin-top: 12.6rem;
+            color: #023047;
+            transform: translateX(4rem);
+
+            font-size: 1.6rem;
+            line-height: 125%;
+            padding: 2.0rem 0;
+            line-height: 3.8rem;
+
+
+            @media only screen and (max-width:866px) {
+                transform: translateX(1rem);
+                margin-top: 2rem;
+            }
+
+            @media only screen and (max-width: 700px) {
+
+
+                font-size: 1.4rem;
+                line-height: 125%;
+                padding: 1.6rem 0;
+                line-height: 3rem;
+                margin-top: 5rem;
+
+            }
+
+
+
+
+
+
+
+
+
+        }
+
+        &--2 {
+
+
+
+            color: #023047;
+            margin-top: 14.1rem;
+
+            font-size: 1.6rem;
+            line-height: 125%;
+            padding: 2.0rem 0;
+            line-height: 3.8rem;
+
+            @media only screen and (max-width:866px) {
+
+                margin-top: 4rem;
+            }
+
+
+            @media only screen and (max-width: 700px) {
+
+
+                font-size: 1.4rem;
+                line-height: 125%;
+                padding: 1.6rem 0;
+                line-height: 3rem;
+
+            }
+
+
+
+
+            &>p {
+                transform: translateY(-.8rem);
+            }
+
+
+
+        }
+
+    }
+
+    &__btn {
+
+        background-color: $color-secondary;
+    }
+
+
+}

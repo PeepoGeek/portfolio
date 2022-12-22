@@ -1,0 +1,92 @@
+// COLOR VARIABLES
+$color-primary: #6F7DFB;
+$color-primary-darker: #057ADA;
+$color-primary-dark: #023047;
+
+$color-secondary: #DA722C;
+
+$color-light: #E8F7FB;
+
+
+$color-dark: #070917;
+
+// FONT VARIABLES
+
+// @font-face {
+//     font-family: 'Poppins', sans-serif;
+//     src: url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Raleway:wght@300;700&display=swap');
+// }
+
+// @font-face {
+//     font-family: 'Raleway', sans-serif;
+//     src: url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Raleway:wght@300;700&display=swap');
+// }
+
+$font-primary-md: 'Poppins';
+$font-secondary-md: 'Raleway';
+$font-size-small: 1.6rem;
+
+
+// SETUP
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+
+
+
+}
+
+body {
+    overflow-x: hidden;
+}
+
+
+
+
+
+.content {
+    background-image: linear-gradient(180deg, #6F7DFB 10%, #26308C 100%);
+    width: 100%;
+    min-width: 66.6rem;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(66.7rem, 1fr));
+    grid-template-rows: min-content max-content max-content max-content max-content min-content min-content;
+
+    @media only screen and (max-width:1309px) {}
+
+}
+
+.btn {
+    width: 15.5rem;
+    height: 6rem;
+    border-radius: 2.4rem;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+
+
+    font-size: $font-size-small;
+    font-family: $font-primary-md;
+    font-weight: 700;
+    line-height: 6rem;
+    text-decoration: none;
+    color: #FFFFFF;
+
+    transition: all .3s;
+
+    &:hover {
+        filter: contrast(70%);
+    }
+
+
+}

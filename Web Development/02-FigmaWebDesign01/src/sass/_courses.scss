@@ -1,0 +1,143 @@
+.courses {
+
+    padding: 7rem 0;
+    grid-row: 4/5;
+    grid-column: 1/-1;
+    display: grid;
+    padding-bottom: 11rem;
+
+
+    grid-template-columns: repeat(auto-fit, minmax(54rem, 1fr));
+
+
+
+
+
+
+
+    background-color: $color-primary;
+
+
+    &__title {
+        text-align: center;
+        grid-column: 1/-1;
+        color: #ffffff;
+        font-weight: 700;
+        line-height: 125%;
+
+
+    }
+
+
+    &__cart-time-img {
+        width: 1.6rem;
+        height: 1.6rem;
+    }
+
+    &__card-img {
+        width: 47.8rem;
+        height: 27.6rem;
+    }
+
+    &__btn {
+        background-color: $color-secondary;
+
+
+        margin-top: 4rem;
+
+
+        @media only screen and (max-width:1305px) {
+            transition: none;
+            margin-top: 5rem;
+
+            transform: translateX(34rem);
+
+
+
+
+
+        }
+
+    }
+
+    &__card--1 {
+        justify-self: center;
+    }
+
+    &__card--2 {
+        justify-self: center;
+
+        @media only screen and (max-width:1305px) {
+            margin-bottom: 9rem;
+
+
+
+        }
+    }
+
+    &__card {
+        border-radius: 2.4em;
+        background-color: #ffffff;
+
+        padding: 0 3.2rem;
+
+        width: 53.6rem;
+        height: 41.8rem;
+
+        &-container {
+            width: 47.2rem;
+            height: 9rem;
+            margin-top: 3rem;
+
+            display: flex;
+            justify-content: space-between;
+        }
+
+
+
+        &-title {
+            align-self: center;
+            color: $color-primary-dark;
+
+        }
+
+        &-time-container {
+            display: inline-flex;
+            width: 8.8rem;
+            height: 8.8rem;
+
+
+            justify-content: end;
+            align-items: center;
+
+        }
+
+        &-time {
+            color: $color-primary-dark;
+            font-family: 'Raleway';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 1.6rem;
+            line-height: 150%;
+
+
+
+        }
+    }
+
+    &__card--1 {
+
+        margin-right: 1.5rem;
+
+    }
+
+    &__card--2 {}
+
+
+
+
+    @media only screen and (max-width:1305px) {
+        row-gap: 6rem;
+
+    }
+}

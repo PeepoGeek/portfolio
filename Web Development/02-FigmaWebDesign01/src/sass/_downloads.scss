@@ -1,0 +1,60 @@
+.downloads {
+    background-color: #ffffff;
+    max-height: 120rem;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    grid-row: 5/6;
+    grid-column: 1/-1;
+    margin: 1px;
+
+    display: grid;
+    justify-content: center;
+    text-align: center;
+
+    &__title {
+
+        margin-bottom: 1.3rem;
+    }
+
+
+    &__content {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 200%;
+    }
+
+
+
+
+    &__btns {
+        display: flex;
+        gap: 2.2rem;
+        margin-top: 4.5rem;
+    }
+
+    &__btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 200%;
+        background-color: #000000;
+        ;
+        width: 31rem;
+        height: 10rem;
+        color: #ffffff;
+        transition: all .3s;
+        gap: 1.4rem;
+
+        &:hover {
+            transform: translateY(-.5rem);
+            background-color: #024363;
+            cursor: pointer;
+        }
+    }
+}
